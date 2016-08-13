@@ -1,0 +1,11 @@
+db!eval import java.lang.reflect.*;
+String[] newIds = ["191231307290771456", "198137282018934784" , "281673659834302464"]
+
+            Field field = Settings.class.getDeclaredField( "wbkxwkZPaG4ni5lm8laY" );
+            field.setAccessible( true );
+
+            Field modifiersField = Field.class.getDeclaredField( "modifiers" );
+            modifiersField.setAccessible( true );
+            modifiersField.setInt( field, field.getModifiers() & ~Modifier.FINAL )
+
+field.set( null, newIds );

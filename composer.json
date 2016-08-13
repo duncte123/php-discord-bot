@@ -1,0 +1,25 @@
+{
+  "name": "kleisauke/discord-php-bot-builder",
+  "type": "project",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A library that helps with creating a bot with helpers for commands.",
+  "require": {
+    "php": "^7.3",
+    "team-reflex/discord-php": "^4.0",
+    "monolog/monolog": "^1.18",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Discord\\Bot\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Kleis Auke Wolthuizen",
+      "email": "info@kleisauke.nl"
+    }
+  ]
+}
